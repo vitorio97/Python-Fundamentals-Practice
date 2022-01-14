@@ -1,22 +1,22 @@
-book_sum=10
+book=10
 print("Teacher said, 'read all books'")
-total_read=0
+read_time=0
 
-book_read_understood=0
-print(f"No. book read and understood {book_read_understood}")
+understood=0
+print(f"No. book read and understood {understood}")
 
-while total_read < book_sum * 2:
-    total_read = total_read + 1
-    if book_read_understood == 9:
-        print(f"Book no - {book_read_understood +1 } not yet understood")
+while read_time < book * 2:
+    read_time = read_time + 1
+    if understood == 9:
+        print(f"Book no - {understood + 1 } not yet understood")
     else:
-        book_read_understood = book_read_understood + 1
-        print(f"Book No - {book_read_understood} has been read and understood")
+        understood = understood + 1
+        print(f"Book No - {understood} has been read and understood")
 
-print(f'Numbers of book already read {book_read_understood}')
+print(f'Numbers of book already read {understood + 1}')
 
 
-if book_read_understood == book_sum:
+if understood == book:
     print("Task Done")
 else:
-    print(f"Not all books can be understood, only {book_read_understood}")
+    print(f"Not all books can be understood, only {understood}")
