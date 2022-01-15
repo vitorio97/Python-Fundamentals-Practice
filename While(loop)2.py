@@ -1,8 +1,10 @@
 book=10
-print("Teacher said, 'read all books'")
-read_time=0
-
 understood=0
+read_time=0
+print("Teacher said, 'read all books'")
+
+
+
 print(f"No. book read and understood {understood}")
 
 while read_time < book * 2:
