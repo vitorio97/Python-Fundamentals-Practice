@@ -1,4 +1,4 @@
-booklist = ['Tomato Plants','Corn Plants','Rice Field']
+booklist = ['Tomato Plants', 'Corn Plants', 'Rice Field']
 print('Shows Booklist Variables')
 print(booklist)
 
@@ -22,9 +22,39 @@ for i in range (0, len(booklist)):
     print(booklist[i])
 
 print('\nReturning Start Value')
-booklist = ['Tomato Plants','Corn Plants','Rice Field']
+booklist = ['Tomato Plants', 'Corn Plants', 'Rice Field']
 print('\nAdding one new book')
 booklist.append('Farming Rice')
 
+for i in range (0, len(booklist)):
+    print(booklist[i])
+
+print('\nClear List')
+booklist.clear()
+for i in range (0, len(booklist)):
+    print(booklist[i])
+
+print('\nChange Elements\n')
+booklist = ['Tomato Plants', 'Corn Plants', 'Rice Field']
+booklist[2] = 'How to Math for Basic'
+for i in range (0, len(booklist)):
+    print(booklist[i])
+
+print('\nGet Element no 2\n')
+book = booklist.pop(1)
+for i in range (0, len(booklist)):
+    print(booklist[i])
+
+print('\nTaken Book\n')
+print(book)
+
+print('\nPop\n')
+booklist.pop()
+for i in range (0, len(booklist)):
+    print(booklist[i])
+
+print('\nPop -1 (which is Rice Field)\n')
+booklist = ['Tomato Plants', 'Corn Plants', 'Rice Field']
+booklist.pop(-1)
 for i in range (0, len(booklist)):
     print(booklist[i])
