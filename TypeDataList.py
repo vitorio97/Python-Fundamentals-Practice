@@ -34,13 +34,13 @@ booklist.clear()
 for i in range (0, len(booklist)):
     print(booklist[i])
 
-print('\nChange Elements\n')
+print('\nChange Elements no.\n')
 booklist = ['Tomato Plants', 'Corn Plants', 'Rice Field']
 booklist[2] = 'How to Math for Basic'
 for i in range (0, len(booklist)):
     print(booklist[i])
 
-print('\nGet Element no 2\n')
+print('\nGet Element no 2 (from left to right)\n')
 book = booklist.pop(1)
 for i in range (0, len(booklist)):
     print(booklist[i])
@@ -56,5 +56,30 @@ for i in range (0, len(booklist)):
 print('\nPop -1 (which is Rice Field)\n')
 booklist = ['Tomato Plants', 'Corn Plants', 'Rice Field']
 booklist.pop(-1)
+for i in range (0, len(booklist)):
+    print(booklist[i])
+
+print('\ndel Command\n')
+booklist = ['Tomato Plants', 'Corn Plants', 'Rice Field']
+del booklist[0]
+for i in range (0, len(booklist)):
+    print(booklist[i])
+
+print('\nList Comprehension Example\n')
+booklist = ['Tomato Plants', 'Corn Plants', 'Rice Field']
+del booklist[:]
+#start:end
+for i in range (0, len(booklist)):
+    print(booklist[i])
+
+print('\nList Comprehension Example\n')
+booklist = ['Tomato Plants', 'Corn Plants', 'Rice Field']
+del booklist[0:-1] #all elements deleted until elements no. -1 (from right)
+for i in range (0, len(booklist)):
+    print(booklist[i])
+
+print('\nList Comprehension Step Example\n')
+booklist = ['Tomato Plants', 'Corn Plants', 'Rice Field','Car Engines Lifespan','Lamb Meals for Kids','Apple Tree in Suburban']
+del booklist[0::2] #Start:End:Step
 for i in range (0, len(booklist)):
     print(booklist[i])
